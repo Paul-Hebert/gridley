@@ -3,10 +3,14 @@
 <html dir="ltr" lang="en-US">
 	<head>
 		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width"> 
+
 		<title> Gridley | Custom CSS Grids </title>
 
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+    	<link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon" />
 
 		<script type="text/javascript" src="js/jquery-v1.11.1.js"></script>
 		<script type="text/javascript" src="js/functions.js"></script>		
@@ -14,7 +18,7 @@
 
 	<body>
 		<div id="code_wrapper">
-			<a href="help.php" target="_BLANK">How do I use this?</a>
+			<a href="help.html" target="_BLANK">How do I use this?</a>
 
 			<code>
 				<div>

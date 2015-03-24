@@ -14,12 +14,11 @@ h1{
 	padding-bottom:15px;
 	margin-bottom:12px;
 	border-bottom: 2px solid #777;
-	max-width:350px;
 }
 
 .float h1{
-	width:330px;
-	font-size: 30pt;
+	width:245px;
+	font-size: 36pt;
 }
 
 h2{
@@ -49,14 +48,19 @@ label{
 	position:relative;
 }
 
+.fields div{
+	position:relative;
+}
+
 .fields input, .fields select{
 	position:absolute;
 	left:150px;
 }
 
-.fields .unit_display{
+.fields div .unit_display{
 	position: absolute;
 	left:293px;
+	top:13px;
 }
 
 form div{
@@ -110,12 +114,14 @@ input[type="submit"]{
 #demo{
 	margin:0 auto;
 	margin:15px;
+	overflow:hidden;
 }
 
 .column{
 	height:400px;
 	background:#fff;
-	display:inline-block;
+	float:left;
+	position:relative;
 }
 
 
@@ -142,7 +148,7 @@ code div{
     line-height: 130%;
     width:100%;
     font-family:'Monaco', monospace;
-    text-indent:25px;
+    padding-left:15px;
 }
 
 code div:nth-of-type(even){
@@ -151,10 +157,6 @@ code div:nth-of-type(even){
 
 code div:nth-of-type(odd){
     background: #E8E8E8;
-}
-
-.indent1{
-    text-indent:50px;
 }
 
 
@@ -204,9 +206,9 @@ You're welcome to use or modify this code in any way, including removing these c
 .col-11{ width: 91.5%; }
 .col-12{ width: 100%; margin:0% }
 		 
-		/* End Gridley Grid Generator */
+/* End Gridley Grid Generator */
 
-@media(min-width:900px){
+@media(min-width:995px){
 	.float{
 		float:left;
 	}
@@ -222,8 +224,8 @@ You're welcome to use or modify this code in any way, including removing these c
 		padding-bottom:20px;
 		margin-bottom:30px;
 
-		max-width:450px;
-		min-width:325px;
+		max-width:400px;
+		min-width:300px;
 		overflow:hidden;
 	}
 
@@ -239,12 +241,17 @@ You're welcome to use or modify this code in any way, including removing these c
 	}
 }
 
-@media(max-width:899px){
+@media(max-width:994px){
 	.float{
 		padding-bottom:15px;
 		margin-bottom:12px;
 		border-bottom: 2px solid #777;
-		width:325px;
+		width:100%;
+	}
+
+
+	.float h1{
+		width:100%;
 	}
 
 	[class^="col-"]{
@@ -256,4 +263,19 @@ You're welcome to use or modify this code in any way, including removing these c
 		margin: 20px 0;
 		width:100%;
 	}
+
+	#code_wrapper{
+		width:100%;
+	}
+
+	code div{
+		overflow:hidden;
+		word-wrap:break-word;
+	}
 }
+
+@-ms-viewport{ 
+	width: device-width; 
+	initial-scale:1.0;
+}
+
