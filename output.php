@@ -1,22 +1,7 @@
-<!DOCTYPE HTML>
-
-<html dir="ltr" lang="en-US">
-	<head>
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width"> 
-
-		<title> Gridley | Custom CSS Grids </title>
-
-		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
-		<link rel="stylesheet" type="text/css" href="css/style.css"/>
-
-    	<link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon" />
-
-		<script type="text/javascript" src="js/jquery-v1.11.1.js"></script>
-		<script type="text/javascript" src="js/functions.js"></script>		
-	</head>
-
-	<body>
+<?php
+	$title = 'Gridley Grid Generator';
+	include('assets/php/header.php');
+?>
 		<div id="code_wrapper">
 			<a href="help.html" target="_BLANK">How do I use this?</a>
 
@@ -68,6 +53,7 @@
 	    					<div>&nbsp;&nbsp;&nbsp; margin: 0 auto;</div>
 							<div>&nbsp;&nbsp;&nbsp; width: ' . $width . $units . ';</div>
 							<div>&nbsp;&nbsp;&nbsp; box-sizing: ' . $box_sizing . ';</div>
+							<div>&nbsp;&nbsp;&nbsp; white-space: no-wrap;</div>
 						<div>}</div>
 
 						<div>&nbsp;</div>
@@ -114,6 +100,7 @@
 				</div>	
 			</code>
 		</div>
+		<?php include('assets/php/scripts.php'); ?>		
 	</body>
 </html>
 

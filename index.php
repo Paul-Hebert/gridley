@@ -1,30 +1,7 @@
-<!DOCTYPE HTML>
-
-<!--
-To Do:
-	prevent gutter width or column counts from being impossibly high.
-
-	Also prevent lowering of main width to make the above too high.
--->
-
-
-<html dir="ltr" lang="en-US">
-	<head>
-		<meta charset="utf-8"/>	
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-
-		<title> Gridley | CSS Grid Generator</title>
-
-		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
-		<link rel="stylesheet" type="text/css" href="css/style.css"/>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,700,600,300' rel='stylesheet' type='text/css'/>
-
-    	<link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon" />
-
-		<script type="text/javascript" src="js/jquery-v1.11.1.js"></script>
-		<script type="text/javascript" src="js/functions.js"></script>		
-	</head>
-
+<?php
+	$title = 'Gridley Grid Generator';
+	include('assets/php/header.php');
+?>
 	<body>
 		<div class="float">
 			<h1> Gridley </h1>
@@ -55,7 +32,7 @@ To Do:
 
 				<div>
 					<label for="gutter_width">Gutter Width</label>
-					<input type="number" name="gutter_width" id="gutter_width" value="20" />
+					<input type="text" name="gutter_width" id="gutter_width" value="20" />
 					<span class="unit_display">px</span>
 				</div>
 
@@ -75,5 +52,7 @@ To Do:
 			<div id="demo">
 			</div>
 		</div>
+
+		<?php include('assets/php/scripts.php'); ?>
 	</body>
 </html>

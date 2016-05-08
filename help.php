@@ -1,24 +1,7 @@
-<!DOCTYPE HTML>
-
-
-<html>
-	<head>
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width"> 
-
-		<title> Gridley | CSS Grid Generator</title>
-
-		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
-		<link rel="stylesheet" type="text/css" href="css/style.css"/>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,700,600,300' rel='stylesheet' type='text/css'>
-
-    	<link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon" />
-
-		<script type="text/javascript" src="js/jquery-v1.11.1.js"></script>
-		<script type="text/javascript" src="js/functions.js"></script>		
-	</head>
-
-	<body>
+<?php
+	$title = 'Gridley Grid Generator';
+	include('assets/php/header.php');
+?>
 		<div class="float">
 			<h1>CSS grids</h1>
 			<h2>The short version</h2>
@@ -160,5 +143,6 @@
 				.col-2
 			</div>
 		</div>
+		<?php include('assets/php/scripts.php'); ?>		
 	</body>
 </html>

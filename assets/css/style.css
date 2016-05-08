@@ -1,0 +1,301 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input[type='submit'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+/**************************************************************************
+	General
+**************************************************************************/
+body {
+  padding: 30px;
+  background: #f4f4f4;
+  font-family: Open Sans, sans-serif; }
+
+h1 {
+  font-size: 24pt;
+  font-weight: 700;
+  padding-bottom: 15px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #777; }
+
+.float h1 {
+  width: 245px;
+  font-size: 36pt; }
+
+h2 {
+  font-size: 18pt;
+  font-weight: 300;
+  font-style: italic;
+  padding-bottom: 15px; }
+
+a {
+  text-decoration: none; }
+
+p {
+  padding-top: 10px; }
+
+label {
+  font-size: 14pt;
+  font-weight: 600;
+  width: 120px;
+  position: relative;
+  top: 3px; }
+
+.fields {
+  position: relative; }
+
+.fields div {
+  position: relative; }
+
+.fields input, .fields select {
+  position: absolute;
+  left: 150px; }
+
+.fields div .unit_display {
+  position: absolute;
+  left: 293px;
+  top: 13px; }
+
+form div {
+  display: block;
+  padding-top: 10px;
+  margin-bottom: 5px; }
+
+input, select {
+  width: 130px;
+  font-size: 12pt; }
+
+select {
+  width: 138px; }
+
+input[type="submit"] {
+  background: #69A6C4;
+  outline: none;
+  border: 0px;
+  font-weight: 600;
+  font-size: 18pt;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer; }
+
+/**************************************************************************
+	Demo
+**************************************************************************/
+#demo_wrapper {
+  background: #69A6C4;
+  overflow: hidden;
+  margin-top: 50px;
+  clear: both;
+  height: 430px; }
+
+#demo {
+  margin: 0 auto;
+  margin: 15px;
+  overflow: hidden; }
+
+.column {
+  height: 400px;
+  background: #fff;
+  float: left;
+  position: relative; }
+
+/**************************************************************************
+	Output
+**************************************************************************/
+#code_wrapper {
+  width: 960px;
+  margin: 40px auto;
+  position: relative; }
+
+#code_wrapper a {
+  position: absolute;
+  top: -20px;
+  right: 5px; }
+
+code div {
+  display: block;
+  border-right: 1px #DBDBDB solid;
+  border-left: 1px #DBDBDB solid;
+  line-height: 130%;
+  width: 100%;
+  font-family: 'Monaco', monospace;
+  padding-left: 15px; }
+
+code div:nth-of-type(even) {
+  background: #DBDBDB; }
+
+code div:nth-of-type(odd) {
+  background: #E8E8E8; }
+
+ /*
+This grid system was generated using the Gridley Grid Generator.
+Gridley is a free service brought to you by Paul Hebert of Mild West Designs.
+Try it out at at www.mildwestdesigns.com/gridley/
+You're welcome to use or modify this code in any way, including removing these comments.
+*/
+.row {
+  clear: both;
+  margin: 20px;
+  width: 90%;
+  padding: 1%;
+  height: 50px;
+  background: #69A6C4;
+  position: relative; }
+
+[class^="col-"] {
+  float: left;
+  margin: 0 2% 0 0;
+  list-style: none;
+  position: relative;
+  background: #fff;
+  height: 50px;
+  text-align: center;
+  padding-top: 20px;
+  box-sizing: border-box; }
+
+[class^="col-"]:last-of-type {
+  margin-right: 0px; }
+
+.col-1 {
+  width: 6.5%; }
+
+.col-2 {
+  width: 15%; }
+
+.col-3 {
+  width: 23.5%; }
+
+.col-4 {
+  width: 32%; }
+
+.col-5 {
+  width: 40.5%; }
+
+.col-6 {
+  width: 49%; }
+
+.col-7 {
+  width: 57.5%; }
+
+.col-8 {
+  width: 66%; }
+
+.col-9 {
+  width: 74.5%; }
+
+.col-10 {
+  width: 83%; }
+
+.col-11 {
+  width: 91.5%; }
+
+.col-12 {
+  width: 100%;
+  margin: 0%; }
+
+/* End Gridley Grid Generator */
+@media (min-width: 995px) {
+  .float {
+    float: left; }
+
+  .fields {
+    padding-left: 15px;
+    border-left: 2px solid #777;
+    padding-right: 15px;
+    margin-right: 15px;
+    border-right: 2px solid #777;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    max-width: 400px;
+    min-width: 300px;
+    overflow: hidden; }
+
+  input[type="submit"] {
+    width: 200px; }
+
+  .row:before {
+    content: ".row";
+    position: absolute;
+    left: -35px;
+    padding-top: 20px; } }
+@media (max-width: 994px) {
+  .float {
+    padding-bottom: 15px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #777;
+    width: 100%; }
+
+  .float h1 {
+    width: 100%; }
+
+  [class^="col-"] {
+    color: #fff;
+    overflow: hidden; }
+
+  .row {
+    margin: 20px 0;
+    width: 100%; }
+
+  #code_wrapper {
+    width: 100%; }
+
+  code div {
+    overflow: hidden;
+    word-wrap: break-word; } }
+@-ms-viewport {
+  width: device-width;
+  initial-scale: 1.0; }
+
+/*# sourceMappingURL=style.css.map */
