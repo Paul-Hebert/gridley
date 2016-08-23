@@ -1,49 +1,16 @@
 @import 'reset';
+@import 'vars';
+@import 'mixins';
+@import 'typography';
 
 /**************************************************************************
 	General
 **************************************************************************/
 
 body{
-	padding:30px;
-	background:#f4f4f4;
+	padding:$extra-large;
+	background:$off-white;
 	font-family: Open Sans, sans-serif;
-}
-
-h1{
-	font-size:24pt;
-	font-weight:700;
-	padding-bottom:15px;
-	margin-bottom:12px;
-	border-bottom: 2px solid #777;
-}
-
-.float h1{
-	width:245px;
-	font-size: 36pt;
-}
-
-h2{
-	font-size:18pt;
-	font-weight:300;
-	font-style:italic;
-	padding-bottom:15px;
-}
-
-a{
-	text-decoration: none;
-}
-
-p{
-	padding-top:10px;
-}
-
-label{
-	font-size:14pt;
-	font-weight:600;
-	width:120px;
-	position:relative;
-	top:3px;
 }
 
 .fields{
@@ -89,16 +56,19 @@ input[type="submit"]{
 	font-weight:600;
 	font-size:18pt;
 
-	padding:5px;
-	padding-left:15px;
-	padding-right:15px;
-
+	padding:15px;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-o-border-radius: 5px;
 
 	cursor:pointer;
+
+	@include transition_mixin(background 300ms ease-in-out);
+
+	&:hover{
+		background:#92C4DB;
+	}
 }
 
 /**************************************************************************
@@ -147,7 +117,7 @@ code div{
     display:block;
     border-right:1px #DBDBDB solid;
     border-left:1px #DBDBDB solid;
-    line-height: 130%;
+    line-height: 140%;
     width:100%;
     font-family:'Monaco', monospace;
     padding-left:15px;
@@ -209,6 +179,10 @@ You're welcome to use or modify this code in any way, including removing these c
 .col-12{ width: 100%; margin:0% }
 		 
 /* End Gridley Grid Generator */
+
+.float h2{
+	padding-right:13pt;
+}
 
 @media(min-width:995px){
 	.float{

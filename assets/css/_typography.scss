@@ -1,0 +1,27 @@
+h1{
+	font-size:$large;
+	font-weight:700;
+	margin-bottom:$medium;
+	border-bottom: 2px solid #777;
+}
+
+h2{
+	font-size:$medium;
+	font-weight:300;
+	font-style:italic;
+	padding-bottom:$small;
+}
+
+a, p, label{
+	font-size:$small;
+	margin-bottom:$extra-small;
+}
+
+a{
+	text-decoration: none;
+}
+
+p{
+	padding-top:10px;
+	line-height:140%;
+}

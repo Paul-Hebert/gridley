@@ -3,7 +3,7 @@
 	include('assets/php/header.php');
 ?>
 		<div id="code_wrapper">
-			<a href="help.html" target="_BLANK">How do I use this?</a>
+			<a href="help.php" target="_BLANK">How do I use this?</a>
 
 			<code>
 				<div>
@@ -19,11 +19,11 @@
 				</div>
 
 				<div>
-					Gridley is a free service brought to you by Paul Hebert of Mild West Designs.
+					Gridley is a free service brought to you by Paul Hebert.
 				</div>
 
 				<div>
-					Try it out at at www.mildwestdesigns.com/gridley/
+					Try it out at at www.paulhebertdesigns.com/gridley/
 				</div>
 
 				<div>

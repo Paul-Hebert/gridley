@@ -2,7 +2,6 @@
 	$title = 'Gridley Grid Generator';
 	include('assets/php/header.php');
 ?>
-	<body>
 		<div class="float">
 			<h1> Gridley </h1>
 			<h2>CSS Grid Generator</h2>
